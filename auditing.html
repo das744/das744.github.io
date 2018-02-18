@@ -1,0 +1,346 @@
+
+<!DOCTYPE html>
+<html>
+<style>
+#navigation-container {
+  width: 100%;
+  margin: 0 auto;
+  height: 100px;
+}
+
+.navigation-bar {
+  
+  height: 70px;
+  width: 100%;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+     background-color:  #b3d9ff;
+	 box-shadow: 10px 10px 5px #888888;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: black;
+	color: white;
+	font-weight:bold;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 70px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+	box-shadow: 10px 10px 5px #888888
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 12px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+	
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;color:red;font-weight:bold;}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+	
+	
+}
+.oval {
+        width: 90px;
+        height: 55px;
+		text-align: center;
+        background: #b3d9ff;
+        border-radius: 60%;
+		color: white;
+		margin-right:2rem; 
+		font-size: 18px;
+		text-align: center;
+		padding-top:10px;
+		box-shadow: 10px 10px 5px #888888
+					
+    }
+input[type=text], select {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=text]:focus {
+    background-color: lightblue;
+}
+.box1{
+		width: 100%;
+		height: 80px;
+		background-color:#428BCA;
+		}
+.ovalA {
+        width: 200px;
+        height: 55px;
+		text-align: center;
+        background: #00e673;
+        border-radius:40px;
+		color:white;
+		margin-right:rem; 
+		font-size: 20px;
+		line-align:10px;
+		padding-top:15px;
+		margin-left:60%;  
+		box-shadow: 10px 10px 5px #888888;	
+		}
+* {
+    box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+    float: left;
+	margin-left: 4px;
+	margin-right: 20px;
+    width: 40%;
+    padding: 10px;
+    height: 400px; /* Should be removed. Only for demonstration */
+
+
+/* Clear floats after the columns */
+.row{
+    content: "";
+    display: table;
+    clear: both;
+}
+.box10{
+		width: 150px;
+		height: 120px;
+		margin-left:80px;
+		margin right:20px;
+		background-color:red;
+		}
+.box11{
+		width: 350px;
+		height: 160px;
+		margin-left:50px;
+		margin right:20px;
+		background-color:;
+		}
+.box12{
+		width: 100%;
+		height: 360px;
+		background-color:red;
+		color:white;
+		}
+.box13{
+		width: 100%;
+		height: 70px;
+		background-color:red;
+	
+		}		
+		
+		
+</style>
+
+<body style=" background-color:  ;  height= 6000px; weight= 100%;">
+<div class="navigation-bar">
+    
+      <table>
+        <tr>
+          <td><a href="home.html"><img style="float:left height:40px; weight: 40px" src="logo.png"></a></td>
+		  
+		  
+          <td>
+		  &nbsp;
+		  &nbsp;
+		  &nbsp;
+		  </td>
+<td>  
+<ul>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">ABOUT</a>
+    <div class="dropdown-content">
+      <a href="overview.html">Overview</a>
+      <a href="customer.html">Customer</a>
+      <a href="Blog.html">Blog</a>
+	  <a href="Event.html">Event</a>
+	  <a href="Partners.html">Partners</a>
+	  <a href="Contact Us.html">Contact Us</a>
+	  </div>
+	  </li>
+	  
+	  <li class="dropdown">
+		  <a href="javascript:void(0)" class="dropbtn">INDUSTRY</a>
+		  <div class="dropdown-content">
+		  <a href="Manufacturing.html">Manufacturing</a>
+		  <a href="Retail.html">Retail</a>
+		  <a href="Construction.html">Construction</a>
+		  <a href="Bank.html">Bank</a>
+		  <a href="Transport.html">Transport</a>
+		  <a href="Education.html">Education</a>
+		  <a href="Energy and Utility.html">Energy and Utility</a>
+		  <a href="Healthcare.html">Healthcare</a>
+		  <a href="Govt.html">Government</a>
+		  <a href="Insurance.html">Insurance</a>
+		  <a href="IT.html">IT</a>
+		  <a href="Oil and Gas.html">Oil and Gas</a>
+		  </div>
+	  </li>
+	  <li class="dropdown">
+		<a href="javascript:void(0)" class="dropbtn">FEATURE</a>
+		  <div class="dropdown-content">
+		 <a href="Questionnaire.html">Questionnaire</a>
+		  <a href="doDigital.html">Do Digital</a>
+		  <a href="#">Email Notification</a>
+		  <a href="#">Fillout and Send</a>
+		  <a href="#">Offline Capabilities</a>
+		  <a href="#">Dashboards and Views</a>
+		  </div>
+	  </li>	  
+	  <li class="dropdown">
+		  <a href="javascript:void(0)" class="dropbtn">SOLUTION</a>
+		  <div class="dropdown-content">
+		   <a href="checkpoint.html">Compliance Checkpoint</a>
+		  <a href="auditing.html">Auditing</a>
+		  <a href="consulting.html">Consulting</a>
+		  </div>
+	  </li>
+	  <li><a href="#pricing">PRICING</a></li>
+	  <li class="dropdown">
+		  <a href="javascript:void(0)" class="dropbtn">SUPPORT</a>
+		  <div class="dropdown-content">
+		  <a href="#">Getting Started</a>
+		  <a href="#">Knowledge base</a>
+		  <a href="#">FAQ's</a>
+		  </div>
+	  </li>    
+</ul>
+</td>
+
+	<td>	 
+		&nbsp;
+		  &nbsp;
+		  &nbsp;
+		  <th><div  class="oval"><a href="Demo.html"> <strong> DEMO</strong></a></div></th>
+		
+		<th><div  class="oval"><a href="Signup.html"><strong> SIGN UP</strong></a></div></th>
+		 <th><a href="#"><strong> Search</a></th>
+		 
+	</td>	
+	</tr>
+		
+	</table>
+	</div>
+	</br>
+	<div class="box1">
+	
+	<p style= "font-size: 40px;color:white;text-align: center; margin-top:10px;position: relative;top: 15px;"> Auditing</p>
+	</div>
+</br>
+</br>
+	
+	<div class="row">
+  <div class="column" style="background-color: #f2f2f2; margin-left: 100px;box-shadow: 10px 10px 5px #888888;">
+  
+    <h2>Effectiveness of Auditing </h2>
+    <p style= "font-size: 17px">Auditing is the next step in the process. It helps you understand how your business really operates. It offers new insights into the inner workings of your enterprise, and reveals areas of improvement or risks you may be facing. Ultimately, a comprehensive audit presents opportunities for growth, compliance, improved efficiency and increased profitability.</br> </br>
+
+Our trained professionals work with you to rigorously assess your systems, processes, products and operations, to ensure you’re both compliant and efficient. At the end of the process, we will present you with a detailed report outlining key findings and an action plan to address any problems and achieve compliance.</br> </br></p>
+  </div>
+  <div class="column" style="background-color: #f2f2f2;box-shadow: 10px 10px 5px #888888;">
+    <h2>Different Auditing Services </h2>
+    <p style= "font-size: 17px"> COur proven methodology which we have been using for over 25 years sets us apart from other compliance auditing firms. </br>
+
+Internal Auditing
+A detailed review of your business’ systems, practices and processes to ensure compliance. We work alongside side you to rigorously assess your operations to identify risk management, current compliance levels and areas for action and improvement.</br> 
+External and Third Party Auditing
+A fully independent process, a third party audit is a key step in helping businesses achieve certification, registration, accreditation, citation or another industry standard or award.
+</br>
+
+The software is also fully secure, and can be installed on-site and hosted on your internal servers.</p>
+  </div>
+</div>
+
+<table style=" margin-left: 30% >
+<tr>
+<td><img style=" margin-left: 50%; height:200px; weight: 200px; margin-top: 40px; box-shadow: 10px 10px 5px #888888" src="computers-2.png"><td>
+<img style=" margin-left: 20%; height:200px; weight: 200px; margin-top: 40px;box-shadow: 10px 10px 5px #888888" src="compliance3.jpe">
+<td><img style=" margin-left: 50%; height:200px; weight: 200px; margin-top: 40px;box-shadow: 10px 10px 5px #888888" src="2.png"><td>
+<td> <div  class="ovalA"><a href="#"> <span style=" color:white";><strong> Introduction Video</strong></span></a></div></td>
+<td> <div  class="ovalA"><a href="Demo.html"><span style=" color:white";><strong> Request for Demo</strong></span></a></div></td>
+</tr>
+</table>
+</br>
+</br>
+<div class="row">
+  <div class="column" style="background-color: #f2f2f2; margin-left: 		120px;box-shadow: 10px 10px 5px #888888;">
+  
+			<h2>About our Auditor </h2>
+			<p style= "font-size: 17px">1. Fully qualified and Exemplar Global Certified</br>
+2. Trained and competent to operate as auditors in your industry</br>
+3. Adhere to the Auditors Code of Conduct</br>
+4. Maintain contact communication with you throughout the auditing process</br>
+5. Deliver a professionally written report articulating key findings and corrective actions</br>
+6. Trusted professionals who keep all information and consultations strictly confidential</br>
+		</p>
+  </div>
+  <div class="column" style="background-color: #f2f2f2;box-shadow: 10px 10px 5px #888888;">
+			<h2>Our staff are qualified to deliver:  </h2>
+			<p style= "font-size: 17px"> Safety Management System Audits (AS4801, OHSAS 18001) Protect your business and your staff with thorough auditing of your Occupational Health and Safety Management systems.</br>
+
+
+Quality Management System Audits (ISO 9001:2015) ISO 9001 Quality Management Systems have been updated. Is your business meeting the new standards? Work with us to find out.</br>
+Environmental Management System Audits (ISO 14001) Going green? Let us help you demonstrate that your environmental management systems protect the environment.</br>
+Food Safety (HACCP) Audits Show your customers that you take food safety seriously with a HACCP certification. We can help you get there.</br>
+Privacy Compliance Audits A detailed review of your processes and systems that safeguard customer privacy, ensuring you are compliant with Federal and State legislation.</br></p>
+  </div>
+</div>	
+
+<table style=" margin-left: 30% >
+<tr>
+<td><img style=" margin-left: 50%; height:200px; weight: 200px; margin-top: 40px; box-shadow: 10px 10px 5px #888888" src="computers-2.png"><td>
+<img style=" margin-left: 20%; height:200px; weight: 200px; margin-top: 40px;box-shadow: 10px 10px 5px #888888" src="compliance3.jpe">
+<td><img style=" margin-left: 50%; height:200px; weight: 200px; margin-top: 40px;box-shadow: 10px 10px 5px #888888" src="2.png"><td>
+<td > <div  class="ovalA"><ahref="speaking expert"><span style=" color:white";> <strong> Speak with an Expert</strong></span></a></div></td>
+<td> <div  class="ovalA"><a href="Demo.html"><span style=" color:white";><strong> Request for Demo</strong></span></a></div></td>
+</tr>
+</table>	
+</div>
+</div>
+</body>
+</html>
+		
+	
+	
+	
+	
+	
+	
+	
+
+
+</body>
+</html>

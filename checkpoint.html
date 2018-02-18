@@ -1,0 +1,340 @@
+
+<!DOCTYPE html>
+<html>
+<style>
+#navigation-container {
+  width: 100%;
+  margin: 0 auto;
+  height: 100px;
+}
+
+.navigation-bar {
+  
+  height: 70px;
+  width: 100%;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+     background-color:  #b3d9ff;
+	 box-shadow: 10px 10px 5px #888888;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: black;
+	color: white;
+	font-weight:bold;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 70px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+	box-shadow: 10px 10px 5px #888888
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 12px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+	
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;color:red;font-weight:bold;}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+	
+	
+}
+.oval {
+        width: 90px;
+        height: 55px;
+		text-align: center;
+        background: #b3d9ff;
+        border-radius: 60%;
+		color: white;
+		margin-right:2rem; 
+		font-size: 18px;
+		text-align: center;
+		padding-top:10px;
+		box-shadow: 10px 10px 5px #888888
+					
+    }
+input[type=text], select {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=text]:focus {
+    background-color: lightblue;
+}
+.box1{
+		width: 100%;
+		height: 80px;
+		background-color:#428BCA;
+		}
+.ovalA {
+        width: 200px;
+        height: 55px;
+		text-align: center;
+        background: #00e673;
+        border-radius:40px;
+		text-color:white;
+		margin-right:rem; 
+		font-size: 20px;
+		line-align:10px;
+		padding-top:15px;
+		margin-left:40%;  
+		box-shadow: 10px 10px 5px #888888;	
+		}
+* {
+    box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+    float: left;
+	margin-left: 4px;
+	margin-right: 20px;
+    width: 40%;
+    padding: 10px;
+    height: 400px; /* Should be removed. Only for demonstration */
+
+
+/* Clear floats after the columns */
+.row{
+    content: "";
+    display: table;
+    clear: both;
+}
+.box10{
+		width: 150px;
+		height: 120px;
+		margin-left:80px;
+		margin right:20px;
+		background-color:red;
+		}
+.box11{
+		width: 350px;
+		height: 160px;
+		margin-left:50px;
+		margin right:20px;
+		background-color:;
+		}
+.box12{
+		width: 100%;
+		height: 360px;
+		background-color:red;
+		color:white;
+		}
+				
+		
+		
+</style>
+
+<body style=" background-color:  ;  height= 4000px; weight= 100%;">
+<div class="navigation-bar">
+    
+      <table>
+        <tr>
+          <td><a href="home.html"><img style="float:left height:40px; weight: 40px" src="logo.png"></a></td>
+		  
+		  
+          <td>
+		  &nbsp;
+		  &nbsp;
+		  &nbsp;
+		  </td>
+<td>  
+<ul>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">ABOUT</a>
+    <div class="dropdown-content">
+      <a href="overview.html">Overview</a>
+      <a href="customer.html">Customer</a>
+      <a href="Blog.html">Blog</a>
+	  <a href="Event.html">Event</a>
+	  <a href="Partners.html">Partners</a>
+	  <a href="Contact Us.html">Contact Us</a>
+	  </div>
+	  </li>
+	  
+	  <li class="dropdown">
+		  <a href="javascript:void(0)" class="dropbtn">INDUSTRY</a>
+		  <div class="dropdown-content">
+		  <a href="Manufacturing.html">Manufacturing</a>
+		  <a href="Retail.html">Retail</a>
+		  <a href="Construction.html">Construction</a>
+		  <a href="Bank.html">Bank</a>
+		  <a href="Transport.html">Transport</a>
+		  <a href="Education.html">Education</a>
+		  <a href="Energy and Utility.html">Energy and Utility</a>
+		  <a href="Healthcare.html">Healthcare</a>
+		  <a href="Govt.html">Government</a>
+		  <a href="Insurance.html">Insurance</a>
+		  <a href="IT.html">IT</a>
+		  <a href="Oil and Gas.html">Oil and Gas</a>
+		  </div>
+	  </li>
+	  <li class="dropdown">
+		<a href="javascript:void(0)" class="dropbtn">FEATURE</a>
+		  <div class="dropdown-content">
+		 <a href="Questionnaire.html">Questionnaire</a>
+		  <a href="doDigital.html">Do Digital</a>
+		  <a href="#">Email Notification</a>
+		  <a href="#">Fillout and Send</a>
+		  <a href="#">Offline Capabilities</a>
+		  <a href="#">Dashboards and Views</a>
+		  </div>
+	  </li>	  
+	  <li class="dropdown">
+		  <a href="javascript:void(0)" class="dropbtn">SOLUTION</a>
+		  <div class="dropdown-content">
+		   <a href="checkpoint.html">Compliance Checkpoint</a>
+		  <a href="auditing.html">Auditing</a>
+		  <a href="consulting.html">Consulting</a>
+		  </div>
+	  </li>
+	  <li><a href="#pricing">PRICING</a></li>
+	  <li class="dropdown">
+		  <a href="javascript:void(0)" class="dropbtn">SUPPORT</a>
+		  <div class="dropdown-content">
+		  <a href="#">Getting Started</a>
+		  <a href="#">Knowledge base</a>
+		  <a href="#">FAQ's</a>
+		  </div>
+	  </li>    
+</ul>
+</td>
+
+	<td>	 
+		&nbsp;
+		  &nbsp;
+		  &nbsp;
+		  <th><div  class="oval"><a href="Demo.html"> <strong> DEMO</strong></a></div></th>
+		
+		<th><div  class="oval"><a href="Signup.html"><strong> SIGN UP</strong></a></div></th>
+		 <th><a href="#"><strong> Search</a></th>
+		 
+	</td>	
+	</tr>
+		
+	</table>
+	</div>
+	</br>
+	<div class="box1">
+	
+	<p style= "font-size: 40px;color:white;text-align: center; margin-top:10px;position: relative;top: 15px;"> Compliance Checkpoint</p>
+	</div>
+
+
+<img style="float:center; margin-left: 45%; height:80px; weight: 100px" src="Compliance_Checkpoint_Logo.png"></a>
+</br>
+</br>
+
+	
+	<div class="row">
+  <div class="column" style="background-color: #f2f2f2; margin-left: 100px;box-shadow: 10px 10px 5px #888888;">
+  
+    <h2>Compliance Checkpoint is a trusted software solution to managing your compliance needs. </h2>
+    <p style= "font-size: 18px">Flexible, scalable and responsive, Compliance Checkpoint is a software platform that uses integrated cloud technology and tablet functionality to fully automate your complex and time consuming audit, risk and compliance tasks.</br> </br>
+
+Adopting this solution is the next step in compliance maturity for your organisation, offering real business benefits and promising to better manage your compliance requirements right across your organisation and the entire supply chain.</br> </br></p>
+  </div>
+  <div class="column" style="background-color: #f2f2f2;box-shadow: 10px 10px 5px #888888;">
+    <h2>A scalable, secure, responsive solution  </h2>
+    <p style= "font-size: 18px"> Compliance Checkpoint is fully scalable, so it can be tailored to meet the specific needs of your organisation. Don’t pay for features you don’t use. This is a business tool that can be fully customised to suit the needs of your organisation using robust, proven technology.</br> </br>
+
+The interactive dashboard gathers information in real time, allowing you to respond to emerging risk and safety issues. Reduce your costs and set up a powerful compliance framework that can be adapted and scaled as you go.</br> </br>
+
+The software is also fully secure, and can be installed on-site and hosted on your internal servers.</p>
+  </div>
+</div>
+
+<table style=" margin-left: 30% >
+<tr>
+<td>
+<img style=" margin-left: 50%; height:200px; weight: 200px; margin-top: 40px; box-shadow: 10px 10px 5px #888888" src="computers-2.png"><td>
+<img style=" margin-left: 20%; height:200px; weight: 200px; margin-top: 40px;box-shadow: 10px 10px 5px #888888" src="compliance3.jpe">
+<td><img style=" margin-left: 50%; height:200px; weight: 200px; margin-top: 40px;box-shadow: 10px 10px 5px #888888" src="2.png"><td>
+<td> <div  class="ovalA"><a href="#"><span style=" color:white";> <strong> Introduction Video</strong></span></a></div></td>
+<td> <div  class="ovalA"><a href="Demo.html"><span style=" color:white";><strong> Request for Demo</strong></span></a></div></td>
+</tr>
+</table>
+</br>
+</br>
+<div class="row">
+  <div class="column" style="background-color: #f2f2f2; margin-left: 		120px;box-shadow: 10px 10px 5px #888888;">
+  
+			<h2>Enjoy the benefits </h2>
+			<p style= "font-size: 18px">.A secure system that can be installed on-site and hosted on your internal servers, or alternatively delivered via the Cloud Software as a Service (SaaS)</br>
+		.Complete Integration between the Cloud and your Multi Platform Tablet.</br>
+		.Easily manage audit and risk management for internal and external compliance needs, and third party vendors across the entire supply chain, anywhere in the world.</br>
+		.Gain unprecedented insight into your organisation and gather information that adds real value to your compliance processes,</br>
+		.Information at your fingertips with the Compliance Checkpoint app and access to a real time Dashboard.</br>
+		</p>
+  </div>
+  <div class="column" style="background-color: #f2f2f2;box-shadow: 10px 10px 5px #888888;">
+			<h2>Our commitment to you  </h2>
+			<p style= "font-size: 18px"> Compliance Checkpoint will perform in accordance with our stated promise and meet your overall expectations.</br>
+		Compliance Checkpoint offers true flexibility and can be customised and configured to meet your specific process requirements.</br>
+		The software will be reliably delivered on time and on budget.</br>
+		If there is a malfunction with the software you will have immediate access to technical support or online help resources.</br>
+		You are working with a trusted compliance company that treats corporate security as paramount.</br></p>
+  </div>
+</div>	
+		
+<table style=" margin-left: 30% >
+<tr>
+<td><img style=" margin-left: 50%; height:200px; weight: 200px; margin-top: 40px; box-shadow: 10px 10px 5px #888888" src="computers-2.png"><td>
+<img style=" margin-left: 20%; height:200px; weight: 200px; margin-top: 40px;box-shadow: 10px 10px 5px #888888" src="compliance3.jpe">
+<td><img style=" margin-left: 50%; height:200px; weight: 200px; margin-top: 40px;box-shadow: 10px 10px 5px #888888" src="2.png"><td>
+<td > <div  class="ovalA"><a href="speaking expert"><span style=" color:white";> <strong> Speak with an Expert</strong></span></a></div></td>
+<td> <div  class="ovalA"><a href="Demo.html"><span style=" color:white";><strong> Request for Demo</strong></span></a></div></td>
+</tr>
+</table>
+	
+</div>
+</div>
+</body>
+</html>
+		
+	
+	
+	
+	
+	
+	
+	
+
+
+</body>
+</html>

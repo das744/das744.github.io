@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> </title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" >
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+#navigation-container {
+  width: 1500px;
+  margin: 0 auto;
+  height: 70px;
+}
+
+.navigation-bar {
+  
+  height: 70px;
+  width: 100%;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+     background-color:#8af295;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: black;
+	color: white;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+	
+    background-color: #f9f9f9;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;color:red;}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+	
+	
+}
+.mySlides {display:none;}
+.oval {
+        width: 90px;
+        height: 45px;
+		text-align: center;
+        background: DodgerBlue;
+        border-radius: 60%;
+		color:white;
+		margin-right:1rem; 
+		font-size: 14px;
+		text-align: center;
+		padding-top:10px;
+					
+    }
+	.ovalA {
+        width: 210px;
+        height: 70px;
+		text-align: center;
+        background: #00e673;
+        border-radius:40px;
+		color:white;
+		margin-right:2rem; 
+		font-size: 16px;
+		line-align:10px;
+		padding-top:15px;
+		margin-left:350px;  
+box-shadow: 10px 10px 5px #888888;		
+					
+    }
+	.ovalB {
+        width: 210px;
+        height: 70px;
+		text-align: center;
+        background: #00e673;
+        border-radius:40px;
+		color:white;
+		margin-right:2rem; 
+		font-size: 16px;
+		line-align:10px;
+		padding-top:15px;
+		margin-left:100px;
+		box-shadow: 10px 10px 5px #888888;		
+    }
+	.ovalC {
+        width: 160px;
+        height:60px;
+		text-align: center;
+        background: #004080 ;
+        border-radius:40px;
+		color:white;
+		margin-right:2rem; 
+		font-size: 16px;
+		line-align:10px;
+		padding-top:15px;
+		margin-left:100px;
+    }
+	.ovalD {
+        width: 160px;
+        height:60px;
+		text-align: center;
+        background: white ;
+        border-radius:40px;
+		color:blue;
+		margin-right:2rem; 
+		font-size: 16px;
+		line-align:10px;
+		padding-top:15px;
+		margin-left:100px;
+    }
+	.ovalE {
+        width: 190px;
+        height:65px;
+		text-align: center;
+        background: #00e673 ;
+        border-radius:40px;
+		color:white;
+		margin-right:2rem; 
+		font-size: 16px;
+		line-align:10px;
+		padding-top:15px;
+		margin-left:650px;
+		box-shadow: 10px 10px 5px #888888;	
+    }
+.box1{
+	width: 1500px;
+    height: 250px;
+	background-color: #4A86E8;
+	Transparency: 50%;
+}
+.box2{
+	width: 1500px;
+    height: 275px;
+	background-color: ;
+}
+.box3{
+	width: 1500px;
+    height: 650px;
+	background-color:#004080;
+}
+.box4{
+	width: 1500px;
+    height: 1275px;
+	background-color: white;
+}
+.box5{
+	width: 1500px;
+    height: 205px;
+	background-color: #999999;
+}
+.box6{
+	width: 1500px;
+    height: 505px;
+	background-color: ;
+}
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.centeredF {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.box8{
+	width: 1500px;
+    height: 300px;
+	background-color: #999999;
+}
+.tech-slideshow {
+  height: 100px;
+  max-width: 100%;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  
+}
+
+.mover-1 {
+  height: 150px;
+  width: 10000px;
+  
+  position: absolute;
+  overflow-x:hidden;
+  top: 0;
+  left: 0;
+
+  animation: moveSlideshow 7s linear infinite;
+}
+
+.mover-1 img {
+  display:inline-block;
+  vertical-align:middle;
+  width:100px;
+  margin:0;
+}
+
+@keyframes moveSlideshow {
+  100% { 
+    transform: translateX(-520px);  
+  }
+}
+.fa {
+  padding: 35px;
+  
+  font-size: 35px;
+  width: 40px;
+  text-align: center;
+  text-decoration: none;
+  margin-right:1rem; 
+  font-size: 25px;
+  line-align:5px;
+  border-radius: 60%;
+  position: relative;
+  margin: 5px 2px;
+  margin-left: 40px;
+  
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+.fa-android {
+  background: #a4c639;
+  color: white;}
+  
+ .div-table {
+background-color: #999999;
+position: relative;
+padding: 30px;
+width: auto;
+margin-top:200px;
+margin-left:250px;
+}
+
+.tab-row {
+float: left;
+width: 900PX;
+color:white;
+}
+
+.cell {
+border: 1px solid #999999;
+float: left;
+padding: 5px;
+width: 170px;
+}
+
+</style>
+</head>
+
+
+ <body style=" background-color: #d7d7dd;  height= 3000px; weight= 1125px;">
+<div class="navigation-bar">
+    <div id="navigation-container">
+      <table>
+        <tr>
+          <td><img style="float:left height:40px; weight: 40px" src="logo.png"></td>
+		  
+		  
+          <td>
+		  &nbsp;
+		  &nbsp;
+		  &nbsp;
+		  </td>
+		<td>   
+
+<ul>
+  
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">ABOUT</a>
+    <div class="dropdown-content">
+      <a href="#">Overview</a>
+      <a href="#">Customer</a>
+      <a href="#">blog</a>
+	  </li>
+	  
+	  <li class="dropdown">
+		  <a href="javascript:void(0)" class="dropbtn">INDUSTRY</a>
+		  <div class="dropdown-content">
+		  <a href="#">Manufacturing</a>
+		  <a href="#">Retail</a>
+		  <a href="#">Construction</a>
+	  </li>
+	  <li class="dropdown">
+		<a href="javascript:void(0)" class="dropbtn">FEATURE</a>
+		  <div class="dropdown-content">
+		  <a href="#">Questionnaire</a>
+		  <a href="#">Electronic Signature</a>
+		  <a href="#">Email Notification</a>
+	  </li>	  
+	  <li class="dropdown">
+		  <a href="javascript:void(0)" class="dropbtn">SOLUTION</a>
+		  <div class="dropdown-content">
+		  <a href="#">Audit</a>
+		  <a href="#">Reporting</a>
+		  <a href="#">Inspection</a>
+	  </li>
+	  <li><a href="#pricing">PRICING</a></li>
+	  <li class="dropdown">
+		  <a href="javascript:void(0)" class="dropbtn">SUPPORT</a>
+		  <div class="dropdown-content">
+		  <a href="#">Getting Started</a>
+		  <a href="#">Knowledge base</a>
+		  <a href="#">FAQ's</a>
+	  </li>  
+    </div>
+  </li>
+</ul>
+</td>
+	<td>	 
+		<th><div  class="oval"><a href="#"> <strong> DEMO</strong></a></div></th>
+		
+		<th><div  class="oval"><a href="#"><strong> SIGN IN</strong></a></div></th>
+		 <th><a href="#"><strong> Search</a></th>
+	</td>	
+	</tr>	
+	</table>	
+	<div class="w3-content w3-section" style="max-width:1000px">
+  <img class="mySlides" src="sliderimage1.png" style="width:100%; ">
+  <img class="mySlides" src="sliderimage2.png" style="width:100%; ">
+  <img class="mySlides" src="sliderimage3.png" style="width:100%; ">
+</div>
+<script>
+var myIndex = 0;
+slideshow();
+
+function slideshow() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(slideshow, 2000); // Change image every 2 seconds
+}
+</script>
+	
+<div class="box1">
+<table>
+<tr>
+    
+		<th style="padding: 70px; "><div  class="ovalA"><a href="#"> <strong> Introduction Video</strong></a></div></th>
+		<th><div  class="ovalB"><a href="#"><strong> Request for Demo</strong></a></div></th>	
+		
+</tr>	
+</table>
+</div>
+
+<div class="box2">
+<table style="margin-left:350px;">
+    <tr >
+		<td><img style="float:left height:70px; weight: 70px" src="ebook.png"></td>
+		<td>
+		  &nbsp;
+		  &nbsp;
+		  &nbsp;
+		  </td>
+		<td>
+		<th>
+		<p style="font-size: 25px">FREE eBook</p>
+		<p> Learn 10 steps to help you better manage Audit </p>
+		<div  class="ovalB"><a href="#"><strong> DOWNLOAD NOW</strong></a></div>
+		</th>
+		</td>		
+    </tr>	
+</table>
+</div>
+
+<div class="box3">
+<p style= "font-size: 33px;color:white;text-align: center; margin-top:20px;position: relative;top: 6px;"> <strong>Products ans Services</strong></p>
+
+<table style="margin-left:250px;">
+    <tr >
+		<td>
+		<th>
+		<img style="float:left height:70px; weight: 70px" src="computers-2.png">
+		<p style= "color:white; font-size: 30px"> Audit Risk and</br>Compliance Expert</p>
+		<div  class="ovalD"><a href="#"><strong> Learn more</strong></a></div>
+		</th>
+		</td>
+		<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+		<td style="border-left:2px solid white;height: 300px">
+			  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		</td>
+		<td>
+		<th>
+		<img style="float:left height:70px; weight: 70px" src="services-images.png">
+		<p style= "color:white; font-size: 30px"> Professional Auditing </br> and Consulting Services </p>
+		<div  class="ovalD"><a href="#"><strong> Learn more</strong></a></div>
+		</th>
+		</td>		
+    </tr>	
+</table>
+</div>
+
+<div class="box6">
+<p style= "font-size: 33px;color:#004080;text-align: center; margin-top:20px;position: relative;top: 6px;"> <strong>Compliance Checkpoint Functionality</strong></p>
+	</br>
+	</br>
+	<table>
+		<tr style="border: 1px solid white">
+		<th><img style=" height:130px; weight: 130px" src="blog1.jpeg"></th>
+		<th><img style=" height:130px; weight: 130px" src="blog2.jpg"></th>
+		<th><img style=" height:130px; weight: 130px" src="blog3.jpeg"></th>
+		<th><img style=" height:130px; weight: 130px" src="blog4.jpg"><th>
+		<th><img style=" height:130px; weight: 130px" src="blog5.jpeg"><th>
+		</tr>
+		<tr>
+		<td> Reporting<td>
+		<td>  Workflow</td>
+		<td>  Audit</td>
+		<td>  Questionnaire</td>
+		<td> Communication </td>
+		
+		</tr>
+	</table>
+</div>
+
+<div class="box4">
+
+		<p style= "font-size: 33px;
+		color:Black;
+		text-align: center; 
+		margin-top:1px;
+		position: relative;
+		top: 35px;"> <strong>Discover Who Trusts Compliance </br> Experts With Their Compliance Needs</strong></p>
+		
+		</br>
+		</br>
+		  
+			<div class="tech-slideshow">
+			<div class="mover-1">
+			<img src="aus-goverment-logo.png" >
+			<img src="bupa-logo.png">
+			<img src="city of melbourne-logo.png">
+			<img src="city-west-water-logo.png">
+			<img src="coles-logo.png">
+			<img src="linfox-logo.png" >
+			<img src="metro-logo.png">
+			<img src="monash-logo.png">
+			<img src="vicroads-logo.png">
+			<img src="nata-logo.png" >
+			<img src="police-logo.png">
+			<img src="target-logo.png">
+			<img src="toll-logo.png">
+			</div>
+			</div>
+			
+		</br>
+		</br>
+		</br>
+		<div  class="ovalE" ><a href="#"><strong> View Our Clients</strong></a></div>
+		</br>
+		</br>
+		<p style= "font-size: 33px;
+		color:Black;
+		text-align: center; 
+		margin-top:1px;
+		position: relative;
+		top: 35px;"> <strong>Compliance Audit & Management Blog</strong></p>
+		</br>
+		</br>
+	<table>
+	<tr style="border: 1px solid white">
+		<th><img style=" height:130px; weight: 130px" src="blog1.jpeg"></th>
+		<th><img style=" height:130px; weight: 130px" src="blog2.jpg"></th>
+		<th><img style=" height:130px; weight: 130px" src="blog3.jpeg"></th>
+		<th><img style=" height:130px; weight: 130px" src="blog4.jpg"><th>
+		<th><img style=" height:130px; weight: 130px" src="blog5.jpeg"><th>
+		</tr>
+		
+		<tr>
+		<td style="border: 1px solid white">What F1 Racing Can Teach </br>Us About Compliance</br>
+	Posted by Paul Molenaar <br/>on Nov 9, 2017 4:02:08 PM </td>
+	
+		<td style="border: 1px solid white"> A Paradigm Shift in Compliance Thinking </br>
+Posted by Paul Molenaar </br>on Sep 28, 2017 2:34:43 PM </td>
+	
+		<td style="border: 1px solid white"> Compliance Software is a Silver Lining for Your Business
+Posted by Paul Molenaar on Sep 14, 2017 7:36:48 AM </td>
+		
+		<td style="border: 1px solid white">How Compliance can Contribute to Exponential Growth
+Posted by Paul Molenaar on May 25, 2017 6:43:00 AM </td>
+
+	<td style="border: 1px solid white">How a Compliance Process Can Help Manage WHS Procedures
+Posted by Paul Molenaar on Apr 13, 2017 7:25:00 AM </td>
+	</tr>
+	
+	</table>
+	</br>
+		</br>
+		<p style= "font-size: 36px;
+		color:Black;
+		text-align: center; 
+		margin-top:1px;
+		position: relative;
+		top: 25px;"> <strong>Follow Us For The Latest Compliance </br>News and Updates</strong></p>
+		</br>
+		</br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		  &nbsp;
+		  &nbsp;
+		  &nbsp;
+		  &nbsp;
+		  &nbsp;
+		  &nbsp;
+		  &nbsp;
+		  &nbsp;
+		  &nbsp;
+		  &nbsp;
+		  &nbsp;
+		  &nbsp;
+		 &nbsp;
+		 &nbsp;
+		 &nbsp;
+		 &nbsp;&nbsp;
+		 &nbsp;
+		 &nbsp;
+		 &nbsp;
+		 &nbsp;
+		<a href="#" class="fa fa-facebook"></a>
+		<a href="#" class="fa fa-twitter"></a>
+		<a href="#" class="fa fa-google"></a>
+		<a href="#" class="fa fa-linkedin"></a>
+		<a href="#" class="fa fa-youtube"></a>
+		<a href="#" class="fa fa-android"></a>
+		
+	</div>	
+	
+<div class="box8">
+
+  
+    <div class ="tab-row">
+<div class ="cell" >About</div>
+<div class = "cell">Industry</div>
+<div class = "cell">Feature</div>
+<div class = "cell">Solution </div>
+<div class = "cell">Support</div>
+
+<div class = "cell">Overview</div>
+<div class = "cell">Manufacturing</div>
+<div class = "cell">Audit</div>
+<div class = "cell">Software</div>
+<div class = "cell">Resources</div>
+
+<div class = "cell">Customers</div>
+<div class = "cell">Retail</div>
+<div class = "cell">Inspection</div>
+<div class = "cell"> Auditing</div>
+<div class = "cell">info</div>
+
+<div class = "cell">Blog</div>
+<div class = "cell">Govt</div>
+<div class = "cell">Reporting</div>
+<div class = "cell">Consulting</div>
+<div class = "cell"></div>
+</div>
+		
+</div>
+
+</div>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
