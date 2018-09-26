@@ -1,3 +1,10 @@
+@media screen and (max-width: 800px) {
+  .box1, .box2, .box3 {
+    max-width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}
+
+
 #navigation-container {
   width: 1600px;
   margin: 0 auto;
@@ -71,7 +78,7 @@ li.dropdown {
         width: 90px;
         height: 45px;
 		text-align: center;
-        background: DodgerBlue;
+        background: red;
         border-radius: 60%;
 		color:white;
 		margin-right:1rem; 
